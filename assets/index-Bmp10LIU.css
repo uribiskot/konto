@@ -1,1 +1,0 @@
-*{box-sizing:border-box}body{background:linear-gradient(#e0f2fe 0%,#f8fafc 100%);margin:0;font-family:Segoe UI,Tahoma,Geneva,Verdana,sans-serif}.home{flex-direction:column;justify-content:center;align-items:center;gap:1.5rem;min-height:100vh;padding:2rem;display:flex}.home h1{color:#1f2937;margin:0;font-size:clamp(2rem,6vw,3.5rem)}.house-image{width:min(320px,80vw);height:auto}
