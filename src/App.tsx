@@ -8,6 +8,7 @@ import {
   FieldSet,
 } from "@/components/ui/field"
 import { Input } from "@/components/ui/input"
+import { Button } from '@/components/ui/button'
 
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
             <Input id="password" type="password" placeholder="••••••••" />
           </Field>
         </FieldGroup>
+        <Button>Login</Button>
       </FieldSet>
     </main>
   )
