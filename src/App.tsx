@@ -1,4 +1,6 @@
 import './App.css'
+import AppButton from './components/button/app-button'
+import AppInput from './components/input/app-input'
 
 function App() {
   return (
@@ -9,6 +11,8 @@ function App() {
         alt="Simple house"
         className="house-image"
       />
+      <AppButton emoji='🔑' text='Login' />
+      <AppInput placeholder='hola caracola' />
     </main>
   )
 }
