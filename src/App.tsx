@@ -1,24 +1,71 @@
 import './App.css'
-import AppButton from '@/components/button/app-button'
-import AppInput from './components/input/app-input'
+
+import {
+  Field,
+  FieldDescription,
+  FieldGroup,
+  FieldLabel,
+  FieldSet,
+} from "@/components/ui/field"
+import { Input } from "@/components/ui/input"
+
 
 function App() {
   return (
     <main className="home">
-      <h1>Hello-Home2</h1>
-      <img
-        src={`${import.meta.env.BASE_URL}house.svg`}
-        alt="Simple house"
-        className="house-image"
-      />
-      <AppButton emoji='🔑' text='Login' />
-      <AppInput placeholder='hola caracola' />
-        <h1 className="text-3xl font-bold underline">
-        Hello world!
-      </h1>
-      <span className="text-sm text-gray-500">This is a simple React app using Tailwind CSS.</span>
+      <FieldSet className="w-full max-w-xs">
+        <FieldGroup>
+          <Field>
+            <FieldLabel htmlFor="username">Username</FieldLabel>
+            <Input id="username" type="text" placeholder="Max Leiter" />
+            <FieldDescription>
+              Choose a unique username for your account.
+            </FieldDescription>
+          </Field>
+          <Field>
+            <FieldLabel htmlFor="password">Password</FieldLabel>
+            <FieldDescription>
+              Must be at least 8 characters long.
+            </FieldDescription>
+            <Input id="password" type="password" placeholder="••••••••" />
+          </Field>
+        </FieldGroup>
+      </FieldSet>
     </main>
   )
 }
 
 export default App
+
+
+// import {
+//   Field,
+//   FieldDescription,
+//   FieldGroup,
+//   FieldLabel,
+//   FieldSet,
+// } from "@/components/ui/field"
+// import { Input } from "@/components/ui/input"
+
+// export function FieldInput() {
+//   return (
+//     <FieldSet className="w-full max-w-xs">
+//       <FieldGroup>
+//         <Field>
+//           <FieldLabel htmlFor="username">Username</FieldLabel>
+//           <Input id="username" type="text" placeholder="Max Leiter" />
+//           <FieldDescription>
+//             Choose a unique username for your account.
+//           </FieldDescription>
+//         </Field>
+//         <Field>
+//           <FieldLabel htmlFor="password">Password</FieldLabel>
+//           <FieldDescription>
+//             Must be at least 8 characters long.
+//           </FieldDescription>
+//           <Input id="password" type="password" placeholder="••••••••" />
+//         </Field>
+//       </FieldGroup>
+//     </FieldSet>
+//   )
+// }
