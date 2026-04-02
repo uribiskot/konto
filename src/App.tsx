@@ -13,6 +13,10 @@ function App() {
       />
       <AppButton emoji='🔑' text='Login' />
       <AppInput placeholder='hola caracola' />
+        <h1 className="text-3xl font-bold underline">
+        Hello world!
+      </h1>
+      <span className="text-sm text-gray-500">This is a simple React app using Tailwind CSS.</span>
     </main>
   )
 }

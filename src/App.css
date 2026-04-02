@@ -8,11 +8,11 @@
   padding: 2rem;
 }
 
-.home h1 {
+/* .home h1 {
   margin: 0;
   font-size: clamp(2rem, 6vw, 3.5rem);
   color: #1f2937;
-}
+} */
 
 .house-image {
   width: min(320px, 80vw);
